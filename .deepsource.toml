@@ -5,7 +5,7 @@ exclude_patterns = [
   "storage/**",
   "public/**",
   "resources/**",
-  "bootstrap/**"
+  "bootstrap/*"
 ]
 
 [[analyzers]]
