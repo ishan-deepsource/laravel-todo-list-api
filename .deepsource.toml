@@ -1,8 +1,12 @@
 version = 1
 
-test_patterns = ["tests/**"]
-
-exclude_patterns = ["database/**"]
+exclude_patterns = [
+  "vendor/**",
+  "storage/**",
+  "public/**",
+  "resources/**",
+  "bootstrap/**"
+]
 
 [[analyzers]]
 name = "php"
