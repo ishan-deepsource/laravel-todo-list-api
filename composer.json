@@ -13,7 +13,8 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "ishan-deepsource/laravel-permission": "dev-main"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -29,6 +30,12 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@bitbucket.org:ishan-deepsource/laravel-permission.git"
+        }
+    ],
     "extra": {
         "laravel": {
             "dont-discover": []

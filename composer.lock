@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "761d96c0ba2c59b6401d2145f83a6f0c",
+    "content-hash": "1b0486203aa495b14b9a6d8b9f17e74d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1016,6 +1016,74 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "ishan-deepsource/laravel-permission",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ishan-deepsource/laravel-permission.git",
+                "reference": "d76e0ed8e60b3f10b978c585bb388cdec82025f6"
+            },
+            "require": {
+                "illuminate/auth": "^7.0|^8.0|^9.0",
+                "illuminate/container": "^7.0|^8.0|^9.0",
+                "illuminate/contracts": "^7.0|^8.0|^9.0",
+                "illuminate/database": "^7.0|^8.0|^9.0",
+                "php": "^7.3|^8.0|^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^9.4",
+                "predis/predis": "^1.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "5.x-dev",
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Spatie\\Permission\\Test\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Permission handling for Laravel 6.0 and up",
+            "homepage": "https://bitbucket.org/ishan-deepsource/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "time": "2022-02-10T12:21:57+00:00"
         },
         {
             "name": "laravel/framework",
@@ -8883,7 +8951,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ishan-deepsource/laravel-permission": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
