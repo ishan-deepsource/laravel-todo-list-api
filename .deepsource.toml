@@ -3,7 +3,7 @@ version = 1
 exclude_patterns = [
   "**/vendor/**",
   "storage/**",
-  "public/**",
+  "public/*",
   "resources/**",
   "bootstrap/**"
 ]
